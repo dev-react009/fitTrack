@@ -70,7 +70,7 @@ fittrack/
 
 ## UI Design
 
-The UI is inspired by Strava with a focus on:
+The UI is inspired by modern design systems like Tailwindcss/Material Design with a focus on:
 
 - Clean, modern aesthetics
 - High readability and usability
@@ -86,12 +86,8 @@ The UI is inspired by Strava with a focus on:
 - Advanced analytics and goal setting
 - Mobile app versions
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
-- Design inspiration from [Strava](https://www.strava.com/)
 - Icons from [Lucide](https://lucide.dev/)
 - Chart library [Recharts](https://recharts.org/)
