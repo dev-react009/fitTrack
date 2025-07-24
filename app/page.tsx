@@ -1,35 +1,30 @@
 "use client";
 
-import { Roboto_Condensed, JetBrains_Mono } from "next/font/google";
+import { Roboto_Condensed,} from "next/font/google";
 
-const jetBrains = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-});
 const robotoCondensed = Roboto_Condensed({
   subsets: ["latin"],
   weight: ["300", "400", "700"],
   display: "swap",
+
 });
 
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import {
   Calendar,
   Activity,
   TrendingUp,
-  User,
   PlusCircle,
   Clock,
   MapPin,
   BarChart2,
   Award,
-  AlertCircle,
   Heart,
   ChevronDown,
   Settings,
   LogOut,
   Flame,
-  Zap,
 } from "lucide-react";
 import {
   LineChart,
@@ -40,8 +35,6 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
-  BarChart,
-  Bar,
   PieChart,
   Pie,
   Cell,
@@ -367,7 +360,7 @@ const FitnessTracker: React.FC = () => {
                 className="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-lg transition-all bg-strava-orange cursor-pointer"
                 onClick={() => setIsProfileOpen(!isProfileOpen)}
               >
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="User Profile"
                   className="w-8 h-8 rounded-full border border-gray-200"
@@ -378,7 +371,7 @@ const FitnessTracker: React.FC = () => {
               {isProfileOpen && (
                 <div className="absolute top-full right-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-gray-200 p-3 z-50">
                   <div className="flex items-center space-x-3 p-2">
-                    <img
+                    <Image
                       src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                       alt="User Profile"
                       className="w-12 h-12 rounded-full"
@@ -1533,7 +1526,7 @@ const FitnessTracker: React.FC = () => {
                     <h4 className="font-bold text-gray-800">Consistency</h4>
                   </div>
                   <p className="text-gray-600 text-sm mb-3">
-                    You're building a great streak with regular activities,
+                    You&apos;re building a great streak with regular activities,
                     Congratulation!
                   </p>
                   <div className="bg-white rounded-md px-3 py-2 text-center">
@@ -1551,7 +1544,7 @@ const FitnessTracker: React.FC = () => {
                     </h4>
                   </div>
                   <p className="text-gray-600 text-sm mb-3">
-                    You've burned over 2,000 calories this month, keep going.
+                    You&apos;ve burned over 2,000 calories this month, keep going.
                     Great Job!
                   </p>
                   <div className="bg-white rounded-md px-3 py-2 text-center">
